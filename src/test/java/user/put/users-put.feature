@@ -5,6 +5,7 @@ Feature: Put user
     And request  { "name": "javaDeveloper", "job": "Developer" }
     When method put
     Then status 200
+    And match $.name == 'javaDeveloper'
 
   Scenario: Get a user from localhost API
     Given url "http://localhost:8080" + "/api/v1/" + "student/" + "1"
