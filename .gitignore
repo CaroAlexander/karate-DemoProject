@@ -23,6 +23,8 @@
 hs_err_pid*
 replay_pid*
 
+
+
 # Lines below belong to Intellij git.ignore:
 
 .gradle
@@ -67,3 +69,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+
+# Karate
+/target/
+*.log
+
+# SonarQube
+.sonar/
+target/
